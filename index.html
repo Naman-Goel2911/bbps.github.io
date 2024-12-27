@@ -9,6 +9,10 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
 </head>
 <body>
+    <div id="loader">
+        <div class="spinner"></div>
+        <p>Loading, please wait...</p>
+    </div>
     <div class="header">
         <div class="logo">
             <img src="assets/school-logo.png" alt="School Logo">
@@ -23,9 +27,6 @@
         </div>
         <div class="image-container">
             <iframe id="tour-frame" src="https://momento360.com/e/u/cbc53aee52124ac384fbdac421a5028d"></iframe>
-            <noscript>
-                <p>360 images not supported. Please try on another device or update your browser.</p>
-            </noscript>
             <button class="control-button fullscreen" onclick="enterFullscreen('tour-frame')"  style="background-color: #1ed760; color: #121212; border: none; border-radius: 2px;">
                 <i class="fas fa-expand"></i>
             </button>
