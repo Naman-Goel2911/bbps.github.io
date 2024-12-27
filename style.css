@@ -197,4 +197,11 @@ body {
     100% { transform: rotate(360deg); }
 }
 
+/* Alternative approach targeting touchscreen devices */
+@media (hover: none) and (pointer: coarse) {
+    .control-button.fullscreen {
+        display: none;
+    }
+}
+
 
