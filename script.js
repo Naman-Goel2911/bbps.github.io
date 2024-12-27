@@ -20,20 +20,13 @@ function enterFullscreen(frameId) {
 window.addEventListener('load', () => {
     const loader = document.getElementById('loader');
     if (loader) {
-        loader.style.opacity = '0'; // Fade out the loader
+        loader.style.opacity = '0'; // Smooth fade-out
         setTimeout(() => {
-            loader.style.display = 'none'; // Remove loader completely
-
-            // Adjust iframe dimensions to enforce aspect ratio
-            const iframes = document.querySelectorAll('.image-container iframe');
-            iframes.forEach((iframe) => {
-                iframe.style.width = '100%';
-                iframe.style.maxWidth = '800px';
-                iframe.style.height = 'auto';
-            });
-        }, 100);
+            loader.style.display = 'none'; // Fully remove the loader
+        }, 500); // Delay ensures fade-out animation completes
     }
 });
+
 
 
 
