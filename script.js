@@ -17,3 +17,23 @@ function enterFullscreen(frameId) {
     }
 }
 
+window.addEventListener('load', () => {
+    const loader = document.getElementById('loader');
+    if (loader) {
+        loader.style.opacity = '0'; // Fade out the loader
+        setTimeout(() => {
+            loader.style.display = 'none'; // Remove loader completely
+
+            // Adjust iframe dimensions to enforce aspect ratio
+            const iframes = document.querySelectorAll('.image-container iframe');
+            iframes.forEach((iframe) => {
+                iframe.style.width = '100%';
+                iframe.style.maxWidth = '800px';
+                iframe.style.height = 'auto';
+            });
+        }, 100);
+    }
+});
+
+
+
