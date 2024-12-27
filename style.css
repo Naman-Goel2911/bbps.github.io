@@ -31,14 +31,21 @@ body {
     margin-right: 10px;
 }
 
-/* Parallax Section */
+/* Replace your current .parallax CSS with this */
 .parallax {
     background-image: url('assets/school.jpg');
     height: 100vh;
-    background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    position: relative;
+}
+
+/* Add this media query for non-iOS devices */
+@supports not (-webkit-touch-callout: none) {
+    .parallax {
+        background-attachment: fixed;
+    }
 }
 
 /* Main Container */
