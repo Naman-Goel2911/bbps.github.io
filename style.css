@@ -66,6 +66,14 @@ body {
     color: #1ed760;
 }
 
+.text-content h3 {
+    font-size: 1em;
+    color: #1ed760;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .text-content p {
     font-size: 1em;
     color: #ffffff;
